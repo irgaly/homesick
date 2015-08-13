@@ -14,7 +14,7 @@ module Homesick
     end
 
     def castle_dir(name)
-      repos_dir.join(name, 'home')
+      repos_dir.join(name, 'home').realpath
     end
 
     def check_castle_existance(name, action)
